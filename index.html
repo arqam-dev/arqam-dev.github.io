@@ -1,526 +1,1144 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
-  <head>
-    <title>Muhammad Arqam &mdash; Full-Stack Software Engineer & Solution Architect</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <title>Arqam Muhammad &mdash; Principal Software Engineer &amp; Tech Lead</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Arqam Muhammad - Principal Software Engineer & Tech Lead with 9+ years experience building scalable, cloud-native software across Europe, the US, and the Middle East. Node.js, React, TypeScript, AWS.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%2300d4ff'/><stop offset='1' stop-color='%237b2fff'/></linearGradient></defs><rect width='100' height='100' rx='22' fill='url(%23g)'/><text x='50' y='68' font-family='Inter,sans-serif' font-size='44' font-weight='900' fill='%23050a10' text-anchor='middle'>AM</text></svg>">
+  <meta name="keywords" content="Principal Software Engineer, Tech Lead, Node.js, React, TypeScript, AWS, Angular, GraphQL, Docker, Serverless, Full-Stack, Lisbon, Portugal, CodeWithArqam">
+  <meta name="author" content="Arqam Muhammad">
+  <meta property="og:title" content="Arqam Muhammad — Principal Software Engineer & Tech Lead">
+  <meta property="og:description" content="Building scalable enterprise systems and leading engineering teams. 10+ years in full-stack development. Open to remote worldwide.">
 
-    <meta name="description" content="Muhammad Arqam - Full-Stack Software Engineer with 8+ years experience in JavaScript, MEAN/MERN stacks, AWS, and enterprise solutions">
-    <meta name="keywords" content="Full-Stack Developer, JavaScript, Node.js, Angular, React, AWS, Software Engineer, Solution Architect">
-    <meta name="author" content="Muhammad Arqam">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/vendor/aos.css">
+  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
 
-    <link rel="stylesheet" href="css/vendor/icomoon/style.css">
-    <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/vendor/animate.min.css">
-    <link rel="stylesheet" href="css/vendor/aos.css">
-    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css">
-    
+  <style>
+    :root {
+      --primary:       #00d4ff;
+      --primary-dim:   rgba(0,212,255,0.12);
+      --primary-border:rgba(0,212,255,0.25);
+      --secondary:     #7b2fff;
+      --accent:        #00ff88;
+      --bg:            #050a10;
+      --bg-card:       rgba(255,255,255,0.035);
+      --bg-card-h:     rgba(255,255,255,0.065);
+      --border:        rgba(255,255,255,0.07);
+      --text:          #f0f4f8;
+      --text-2:        rgba(240,244,248,0.62);
+      --text-3:        rgba(240,244,248,0.38);
+      --font:          'Inter', sans-serif;
+      --mono:          'Fira Code', monospace;
+      --radius:        14px;
+      --tr:            all 0.28s cubic-bezier(0.4,0,0.2,1);
+      --glow:          0 0 28px rgba(0,212,255,0.14);
+      --shadow:        0 8px 40px rgba(0,0,0,0.45);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font); background: var(--bg); color: var(--text); font-size: 16px; line-height: 1.75; overflow-x: hidden; }
+    body:before { display: none !important; }
+    body, .unslate_co--site-inner { background: var(--bg); }
+    a { color: var(--primary); transition: var(--tr); }
+    a:hover { color: var(--primary); text-decoration: none !important; }
+    ::selection { background: var(--primary); color: var(--bg); }
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 3px; }
+    img { max-width: 100%; height: auto; }
 
-    <!-- Theme Style -->
-    <link rel="stylesheet" href="css/style.css">
-    
-    <!-- Custom Project Names Styling -->
-    <style>
-      .project-name {
-        color: #ffffff;
-        font-size: 24px;
-        font-weight: 600;
-        text-align: center;
-        margin: 0;
-        padding: 20px;
-        opacity: 0.8;
-        transition: all 0.3s ease;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-      }
-      .project-name:hover {
-        opacity: 1;
-        transform: scale(1.05);
-        color: #66ceff;
-      }
-      .logo-v1 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 80px;
-      }
-      
-      /* About Section Styling */
-      .about-content-wrapper {
-        padding: 40px 0;
-      }
-      .about-card {
-        background: rgba(255, 255, 255, 0.05);
-        border-radius: 15px;
-        padding: 30px;
-        margin-bottom: 20px;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        transition: all 0.3s ease;
-      }
-      .about-card:hover {
-        background: rgba(255, 255, 255, 0.08);
-        transform: translateY(-5px);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-      }
-      .achievements-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-      .achievements-list li {
-        padding: 8px 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        position: relative;
-        padding-left: 25px;
-      }
-      .achievements-list li:before {
-        content: "✓";
-        position: absolute;
-        left: 0;
-        color: #66ceff;
-        font-weight: bold;
-      }
-      .achievements-list li:last-child {
-        border-bottom: none;
-      }
-      .about-cta {
-        margin-top: 40px;
-      }
-    </style>
+    .unslate_co--site-inner { margin-bottom: 440px; position: relative; z-index: 1; }
+    @media (max-width: 991.98px) { .unslate_co--site-inner { margin-bottom: 0 !important; } }
+    .unslate_co--footer { position: fixed !important; bottom: 0; left: 0; right: 0; height: 440px; z-index: -1; background: #080d15; border-top: 1px solid var(--border); }
+    @media (max-width: 991.98px) { .unslate_co--footer { height: auto !important; position: relative !important; } }
 
-  </head>
-  <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
+    .section-v2 { padding: 96px 0; }
+    @media (max-width: 767px) { .section-v2 { padding: 64px 0; } }
+    .section-divider { height: 1px; background: linear-gradient(to right, transparent, var(--border) 30%, var(--border) 70%, transparent); }
+    .lines-wrap { display: none !important; }
 
-    <nav class="unslate_co--site-mobile-menu">
-      <div class="close-wrap d-flex">
-        <a href="#" class="d-flex ml-auto js-menu-toggle">
-          <span class="close-label">Close</span>
-          <div class="close-times">
-            <span class="bar1"></span>
-            <span class="bar2"></span>
-          </div>
-        </a>
+    /* NAVBAR */
+    .unslate_co--site-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 999; padding: 22px 0; transition: var(--tr); }
+    .unslate_co--site-nav.is-scrolled { background: rgba(5,10,16,0.92); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); padding: 14px 0; border-bottom: 1px solid var(--border); }
+    .unslate_co--site-logo { font-family: var(--font); font-size: 24px; font-weight: 900; color: var(--text) !important; letter-spacing: -0.5px; }
+    .unslate_co--site-logo span { color: var(--primary); }
+    .pos-absolute { position: absolute !important; left: 50%; transform: translateX(-50%); }
+    .site-nav-ul { list-style: none; padding: 0; display: flex; gap: 4px; }
+    .site-nav-ul li a.nav-link { color: var(--text-2); font-size: 12.5px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; padding: 6px 13px; border-radius: 6px; transition: var(--tr); }
+    .site-nav-ul li a.nav-link:hover { color: var(--primary); background: var(--primary-dim); }
+    .site-nav-ul-none-onepage { list-style: none; padding: 0; }
+    .site-nav-ul-none-onepage a { color: var(--text-2); font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+
+    /* MOBILE MENU */
+    .unslate_co--site-mobile-menu { position: fixed; top: 0; right: -310px; width: 300px; height: 100vh; background: #0a0f1a; z-index: 1100; transition: right 0.3s ease; border-left: 1px solid var(--border); }
+    .close-wrap { padding: 20px; }
+    .close-label { font-size: 12px; text-transform: uppercase; letter-spacing: .1em; color: var(--text-3); }
+    .close-times { display: flex; flex-direction: column; gap: 5px; margin-left: 10px; cursor: pointer; }
+    .close-times .bar1, .close-times .bar2 { width: 22px; height: 2px; background: var(--text); }
+    .site-mobile-inner .nav-wrap { padding: 28px 20px; }
+    .site-mobile-inner ul { list-style: none; padding: 0; }
+    .site-mobile-inner ul li { border-bottom: 1px solid var(--border); }
+    .site-mobile-inner ul li a { display: block; padding: 14px 0; color: var(--text-2); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; }
+
+    /* LOADER */
+    #unslate_co--overlayer { position: fixed; inset: 0; z-index: 9998; background: var(--bg); transition: opacity 0.5s ease; }
+    #unslate_co--overlayer.loaded { opacity: 0; pointer-events: none; }
+    .site-loader-wrap { position: fixed; z-index: 9999; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+    .site-loader { width: 38px; height: 38px; border: 3px solid rgba(0,212,255,0.15); border-top-color: var(--primary); border-radius: 50%; animation: spin .75s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* HERO */
+    #home-section { min-height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden; background: var(--bg); }
+    .hero-bg-glow { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse 70% 60% at 15% 55%, rgba(0,212,255,0.07) 0%, transparent 65%), radial-gradient(ellipse 50% 50% at 85% 20%, rgba(123,47,255,0.07) 0%, transparent 60%), radial-gradient(ellipse 40% 40% at 65% 85%, rgba(0,255,136,0.04) 0%, transparent 55%); }
+    .hero-grid-lines { position: absolute; inset: 0; pointer-events: none; background-image: linear-gradient(rgba(0,212,255,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(0,212,255,0.025) 1px, transparent 1px); background-size: 64px 64px; }
+    .hero-content { position: relative; z-index: 2; padding: 120px 0 70px; }
+
+    .hero-badge { display: inline-flex; align-items: center; gap: 10px; background: rgba(0,255,136,0.07); border: 1px solid rgba(0,255,136,0.18); border-radius: 50px; padding: 7px 18px; font-size: 13px; font-weight: 600; color: var(--accent); margin-bottom: 28px; }
+    .hero-badge .badge-dot { width: 7px; height: 7px; background: var(--accent); border-radius: 50%; animation: badgePulse 2s ease-in-out infinite; }
+    @keyframes badgePulse { 0%,100%{transform:scale(1);opacity:1} 50%{transform:scale(1.4);opacity:.6} }
+
+    .hero-name { font-size: clamp(50px, 7.5vw, 96px); font-weight: 900; line-height: 1.04; letter-spacing: -3px; margin-bottom: 18px; }
+    .hero-name .grad { background: linear-gradient(125deg, var(--primary) 0%, var(--secondary) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+    .hero-typed-row { font-size: clamp(16px, 2.2vw, 24px); font-weight: 500; color: var(--text-2); margin-bottom: 26px; min-height: 34px; display: flex; align-items: center; gap: 6px; }
+    .typed-prefix { color: var(--text-3); font-family: var(--mono); font-size: 0.9em; }
+    #typed-out { color: var(--primary); }
+    .typed-cur { color: var(--primary); animation: curBlink 1s step-end infinite; }
+    @keyframes curBlink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+    .hero-lead { font-size: 16.5px; color: var(--text-2); line-height: 1.85; max-width: 530px; margin-bottom: 36px; }
+    .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 40px; }
+
+    .btn-solid { display: inline-flex; align-items: center; gap: 9px; background: linear-gradient(130deg, var(--primary), #0099bb); color: #020c12 !important; padding: 13px 26px; border-radius: 8px; font-weight: 700; font-size: 13.5px; letter-spacing: .03em; text-transform: uppercase; border: none; cursor: pointer; transition: var(--tr); text-decoration: none !important; }
+    .btn-solid:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(0,212,255,.38); color: #020c12 !important; }
+    .btn-ghost { display: inline-flex; align-items: center; gap: 9px; background: transparent; color: var(--text) !important; padding: 12px 26px; border-radius: 8px; font-weight: 600; font-size: 13.5px; letter-spacing: .03em; text-transform: uppercase; border: 1px solid var(--border); cursor: pointer; transition: var(--tr); text-decoration: none !important; }
+    .btn-ghost:hover { border-color: var(--primary); color: var(--primary) !important; background: var(--primary-dim); transform: translateY(-2px); }
+
+    .hero-socials { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+    .hero-socials-label { font-size: 11.5px; color: var(--text-3); text-transform: uppercase; letter-spacing: .12em; margin-right: 2px; }
+    .s-icon { display: flex; align-items: center; justify-content: center; width: 38px; height: 38px; border: 1px solid var(--border); border-radius: 8px; color: var(--text-2) !important; font-size: 15px; transition: var(--tr); text-decoration: none !important; }
+    .s-icon:hover { border-color: var(--primary); color: var(--primary) !important; background: var(--primary-dim); transform: translateY(-3px); }
+
+    .hero-right { position: relative; z-index: 2; padding: 120px 0 70px; }
+    .hero-photo-wrap { position: relative; display: flex; justify-content: center; margin-bottom: 28px; }
+    .hero-photo-wrap img { width: 300px; height: 300px; object-fit: cover; border-radius: 50%; border: 2px solid var(--primary-border); position: relative; z-index: 2; }
+    .hero-avatar { width: 300px; height: 300px; border-radius: 50%; border: 2px solid var(--primary-border); position: relative; z-index: 2; background: linear-gradient(135deg, #0a1628 0%, #0d1f3c 100%); display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 4px; flex-shrink: 0; }
+    .hero-avatar-initials { font-size: 72px; font-weight: 900; letter-spacing: -3px; background: linear-gradient(125deg, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; line-height: 1; }
+    .hero-avatar-hint { font-size: 10px; color: var(--text-3); text-transform: uppercase; letter-spacing: .14em; font-weight: 500; }
+    .ring1, .ring2 { position: absolute; top: 50%; left: 50%; border-radius: 50%; border-style: dashed; }
+    .ring1 { width: 340px; height: 340px; transform: translate(-50%,-50%); border: 1px dashed rgba(0,212,255,.22); animation: spinRing 22s linear infinite; }
+    .ring2 { width: 390px; height: 390px; transform: translate(-50%,-50%); border: 1px dashed rgba(123,47,255,.15); animation: spinRing 35s linear infinite reverse; }
+    @keyframes spinRing { to { transform: translate(-50%,-50%) rotate(360deg); } }
+
+    .float-badge { position: absolute; z-index: 3; background: rgba(8,13,22,0.88); border: 1px solid var(--primary-border); border-radius: 9px; padding: 7px 13px; font-size: 12px; font-weight: 600; color: var(--primary); backdrop-filter: blur(12px); animation: floatY 3s ease-in-out infinite; }
+    .float-badge:nth-child(2) { top: 6%;  right: 2%;  animation-delay: 0s; }
+    .float-badge:nth-child(3) { bottom: 22%; right: -3%; animation-delay: -1.2s; }
+    .float-badge:nth-child(4) { bottom: 26%; left: 2%;  animation-delay: -2.1s; }
+    .float-badge:nth-child(5) { top: 18%;  left: 8%;  animation-delay: -0.7s; }
+    @keyframes floatY { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-9px)} }
+
+    .hero-stats-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .stat-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 14px; text-align: center; backdrop-filter: blur(8px); transition: var(--tr); }
+    .stat-card:hover { border-color: var(--primary-border); background: var(--bg-card-h); transform: translateY(-3px); box-shadow: var(--glow); }
+    .stat-num { font-size: 38px; font-weight: 900; letter-spacing: -1px; display: block; line-height: 1; margin-bottom: 6px; background: linear-gradient(130deg, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .stat-lbl { font-size: 11px; text-transform: uppercase; letter-spacing: .1em; color: var(--text-3); font-weight: 500; }
+
+    @media (max-width: 991px) {
+      .hero-content, .hero-right { padding: 110px 0 50px; }
+      .hero-content { text-align: center; }
+      .hero-badge { margin: 0 auto 28px; }
+      .hero-lead { margin: 0 auto 36px; }
+      .hero-cta, .hero-socials { justify-content: center; }
+      .hero-right { padding-top: 0; }
+      .hero-photo-wrap img { width: 220px; height: 220px; }
+      .ring1 { width: 250px; height: 250px; } .ring2 { width: 288px; height: 288px; }
+    }
+
+    /* SECTION HEADER */
+    .sec-tag { display: inline-flex; align-items: center; gap: 10px; font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .16em; color: var(--primary); margin-bottom: 14px; }
+    .sec-tag::before { content: ''; display: inline-block; width: 28px; height: 2px; background: var(--primary); }
+    .sec-title { font-size: clamp(30px, 4vw, 50px); font-weight: 800; letter-spacing: -1px; line-height: 1.18; color: var(--text); margin-bottom: 18px; }
+    .sec-sub { font-size: 16.5px; color: var(--text-2); line-height: 1.85; max-width: 540px; }
+
+    /* ABOUT */
+    .about-img-outer { position: relative; }
+    .about-img-outer img { width: 100%; border-radius: var(--radius); object-fit: cover; aspect-ratio: 4/5; display: block; }
+    .about-img-deco { position: absolute; bottom: -18px; right: -18px; width: 58%; height: 58%; border: 2px solid var(--primary-border); border-radius: var(--radius); z-index: -1; }
+    .about-code-panel { background: #0d1117; border: 1px solid var(--border); border-radius: var(--radius); padding: 0; overflow: hidden; height: 100%; min-height: 420px; display: flex; flex-direction: column; }
+    .acp-bar { background: #161b22; padding: 12px 16px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 7px; }
+    .acp-body { padding: 24px; font-family: var(--mono); font-size: 13px; line-height: 2.0; flex: 1; overflow: hidden; }
+    .acp-section { margin-bottom: 20px; }
+    .acp-comment { color: rgba(240,244,248,0.28); }
+    .acp-key { color: var(--accent); }
+    .acp-val { color: #ffa657; }
+    .acp-str { color: #79c0ff; }
+    .acp-num { color: #7b2fff; }
+    .acp-arr-item { display: block; padding-left: 20px; color: var(--text-2); }
+    .available-pill { display: inline-flex; align-items: center; gap: 10px; background: rgba(0,255,136,.06); border: 1px solid rgba(0,255,136,.18); border-radius: 8px; padding: 9px 18px; font-size: 13.5px; font-weight: 600; color: var(--accent); margin-bottom: 22px; }
+    .available-pill .adot { width: 7px; height: 7px; background: var(--accent); border-radius: 50%; animation: badgePulse 2s ease-in-out infinite; }
+    .stat-strip { display: flex; flex-wrap: wrap; gap: 28px; padding: 26px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); margin: 28px 0; }
+    .strip-item { text-align: center; }
+    .strip-num { font-size: 32px; font-weight: 900; letter-spacing: -1px; color: var(--primary); display: block; line-height: 1; }
+    .strip-lbl { font-size: 11px; text-transform: uppercase; letter-spacing: .1em; color: var(--text-3); }
+    .highlight-row { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px; padding: 18px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 11px; transition: var(--tr); }
+    .highlight-row:hover { border-color: var(--primary-border); background: var(--bg-card-h); }
+    .hl-icon { width: 40px; height: 40px; min-width: 40px; background: var(--primary-dim); border-radius: 9px; display: flex; align-items: center; justify-content: center; color: var(--primary); font-size: 17px; }
+    .hl-title { font-size: 14.5px; font-weight: 700; color: var(--text); margin-bottom: 3px; }
+    .hl-desc { font-size: 13px; color: var(--text-3); line-height: 1.55; margin: 0; }
+
+    /* SKILLS */
+    .skill-bar-wrap { margin-bottom: 18px; }
+    .skill-bar-hd { display: flex; justify-content: space-between; margin-bottom: 7px; }
+    .skill-bar-name { font-size: 13.5px; font-weight: 600; color: var(--text); }
+    .skill-bar-pct { font-size: 12px; color: var(--primary); font-family: var(--mono); }
+    .skill-track { height: 4px; background: rgba(255,255,255,.06); border-radius: 3px; overflow: hidden; }
+    .skill-fill { height: 100%; width: 0; background: linear-gradient(90deg, var(--primary), var(--secondary)); border-radius: 3px; transition: width 1.4s cubic-bezier(.4,0,.2,1); }
+    .tech-cat { margin-bottom: 32px; }
+    .tech-cat-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: var(--text-3); margin-bottom: 12px; padding-left: 2px; }
+    .tech-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+    .t-tag { display: inline-flex; align-items: center; gap: 7px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 7px; padding: 7px 14px; font-size: 12.5px; font-weight: 500; color: var(--text-2); transition: var(--tr); cursor: default; }
+    .t-tag:hover { border-color: var(--primary-border); color: var(--primary); background: var(--primary-dim); transform: translateY(-2px); }
+
+    /* TIMELINE */
+    .timeline { position: relative; padding-left: 38px; }
+    .timeline::before { content: ''; position: absolute; left: 0; top: 16px; bottom: 0; width: 2px; background: linear-gradient(to bottom, var(--primary), var(--secondary) 70%, transparent); }
+    .tl-item { position: relative; margin-bottom: 36px; }
+    .tl-item::before { content: ''; position: absolute; left: -45px; top: 15px; width: 13px; height: 13px; border-radius: 50%; background: var(--primary); border: 3px solid var(--bg); box-shadow: 0 0 0 2px var(--primary); }
+    .tl-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px 28px; transition: var(--tr); }
+    .tl-card:hover { border-color: var(--primary-border); background: var(--bg-card-h); box-shadow: var(--glow); }
+    .tl-top { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 6px; }
+    .tl-company { font-size: 17px; font-weight: 700; color: var(--text); }
+    .tl-badge { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; background: var(--primary-dim); border: 1px solid var(--primary-border); color: var(--primary); padding: 3px 11px; border-radius: 20px; }
+    .tl-role { font-size: 14.5px; font-weight: 600; color: var(--primary); margin-bottom: 6px; }
+    .tl-meta { font-size: 12.5px; color: var(--text-3); margin-bottom: 14px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+    .tl-desc { font-size: 14px; color: var(--text-2); line-height: 1.75; margin-bottom: 16px; }
+    .tl-pills { display: flex; flex-wrap: wrap; gap: 6px; }
+    .pill { font-size: 11px; background: rgba(255,255,255,.04); border: 1px solid var(--border); color: var(--text-3); padding: 3px 9px; border-radius: 4px; font-family: var(--mono); }
+    @media (max-width: 767px) { .timeline { padding-left: 24px; } .tl-item::before { left: -31px; } }
+
+    /* PROJECTS */
+    .projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); gap: 20px; }
+    @media (max-width: 767px) { .projects-grid { grid-template-columns: 1fr; } }
+    .proj-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px; transition: var(--tr); position: relative; overflow: hidden; display: flex; flex-direction: column; }
+    .proj-card::after { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--secondary)); transform: scaleX(0); transform-origin: left; transition: var(--tr); }
+    .proj-card:hover { border-color: var(--primary-border); background: var(--bg-card-h); transform: translateY(-5px); box-shadow: var(--shadow); }
+    .proj-card:hover::after { transform: scaleX(1); }
+    .proj-top { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 16px; }
+    .proj-icon { width: 46px; height: 46px; background: var(--primary-dim); border-radius: 11px; display: flex; align-items: center; justify-content: center; font-size: 20px; color: var(--primary); }
+    .proj-period { font-size: 11px; color: var(--text-3); font-family: var(--mono); margin-top: 4px; }
+    .proj-title { font-size: 19px; font-weight: 700; color: var(--text); margin-bottom: 5px; }
+    .proj-domain { font-size: 11.5px; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 12px; }
+    .proj-desc { font-size: 13.5px; color: var(--text-2); line-height: 1.75; margin-bottom: 18px; flex: 1; }
+    .proj-link { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; font-weight: 600; color: var(--primary) !important; transition: var(--tr); margin-top: auto; text-decoration: none !important; }
+    .proj-link i { transition: var(--tr); }
+    .proj-link:hover i { transform: translateX(4px); }
+
+    /* CODEWITHARQAM SPOTLIGHT */
+    .spotlight-wrap { background: linear-gradient(135deg, rgba(0,212,255,.06) 0%, rgba(123,47,255,.06) 100%); border: 1px solid rgba(0,212,255,.18); border-radius: 22px; padding: 56px 52px; position: relative; overflow: hidden; }
+    .spotlight-wrap::before { content: ''; position: absolute; top: -30%; right: -5%; width: 380px; height: 380px; border-radius: 50%; background: radial-gradient(circle, rgba(0,212,255,.06), transparent 70%); pointer-events: none; }
+    @media (max-width: 767px) { .spotlight-wrap { padding: 36px 22px; } }
+    .spotlight-title { font-size: clamp(26px, 3vw, 40px); font-weight: 800; letter-spacing: -1px; margin-bottom: 14px; }
+    .spotlight-title span { background: linear-gradient(125deg, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .feat-row { display: flex; align-items: flex-start; gap: 11px; margin-bottom: 13px; }
+    .feat-icon { color: var(--primary); font-size: 15px; margin-top: 2px; }
+    .feat-text { font-size: 15px; color: var(--text-2); }
+    .code-window { background: #0d1117; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
+    .code-window-bar { background: #161b22; padding: 11px 16px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 7px; }
+    .cw-dot { width: 11px; height: 11px; border-radius: 50%; display: inline-block; }
+    .cw-dot-r { background: #ff5f57; } .cw-dot-y { background: #febc2e; } .cw-dot-g { background: #28c840; }
+    .cw-url { margin-left: 10px; font-family: var(--mono); font-size: 12px; color: var(--text-3); }
+    .code-body { padding: 22px 24px; font-family: var(--mono); font-size: 13px; line-height: 2.1; }
+    .c-kw { color: #7b2fff; } .c-var { color: var(--primary); } .c-key { color: var(--accent); } .c-str { color: #ffa657; } .c-bool { color: #7b2fff; }
+    .c-in { display: block; padding-left: 20px; }
+
+    /* TESTIMONIALS */
+    .test-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; transition: var(--tr); position: relative; height: 100%; }
+    .test-card:hover { border-color: var(--primary-border); background: var(--bg-card-h); }
+    .test-quote { font-size: 42px; line-height: 1; color: var(--primary); opacity: .22; margin-bottom: 4px; font-family: Georgia, serif; }
+    .test-text { font-size: 14.5px; color: var(--text-2); line-height: 1.82; font-style: italic; margin-bottom: 22px; }
+    .test-author { display: flex; align-items: center; gap: 13px; }
+    .test-av { width: 46px; height: 46px; min-width: 46px; border-radius: 50%; background: linear-gradient(135deg, var(--primary), var(--secondary)); display: flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 700; color: var(--bg); flex-shrink: 0; }
+    .test-name { font-size: 14.5px; font-weight: 700; color: var(--text); margin-bottom: 2px; }
+    .test-role { font-size: 12px; color: var(--text-3); }
+    .test-li { position: absolute; top: 18px; right: 18px; color: #0a66c2 !important; font-size: 19px; text-decoration: none !important; }
+
+    /* OSS */
+    .oss-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; height: 100%; transition: var(--tr); }
+    .oss-card:hover { border-color: var(--primary-border); background: var(--bg-card-h); transform: translateY(-4px); }
+    .oss-label { display: inline-flex; align-items: center; gap: 6px; background: rgba(203,56,55,.08); border: 1px solid rgba(203,56,55,.2); border-radius: 6px; padding: 3px 11px; font-size: 11.5px; font-weight: 700; color: #cb3837; margin-bottom: 14px; font-family: var(--mono); }
+    .oss-label.purple { background: rgba(123,47,255,.08); border-color: rgba(123,47,255,.2); color: var(--secondary); }
+    .oss-label.green { background: rgba(0,255,136,.06); border-color: rgba(0,255,136,.18); color: var(--accent); }
+    .oss-title { font-size: 17.5px; font-weight: 700; color: var(--text); margin-bottom: 10px; font-family: var(--mono); }
+    .oss-title.plain { font-family: var(--font); }
+    .oss-desc { font-size: 13.5px; color: var(--text-2); line-height: 1.75; margin-bottom: 18px; }
+    .oss-link { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; font-weight: 600; color: var(--primary) !important; text-decoration: none !important; transition: var(--tr); }
+    .oss-link:hover { gap: 10px; }
+
+    /* CONTACT */
+    .contact-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; transition: var(--tr); }
+    .contact-card:hover { border-color: var(--primary-border); background: var(--bg-card-h); }
+    .form-v2 label { font-size: 11px; text-transform: uppercase; letter-spacing: .1em; color: var(--text-3); margin-bottom: 7px; display: block; }
+    .form-v2 .form-control { background: rgba(255,255,255,.03); border: 1px solid var(--border); border-radius: 8px; color: var(--text); padding: 11px 15px; font-size: 14px; width: 100%; font-family: var(--font); transition: var(--tr); }
+    .form-v2 .form-control:focus { background: rgba(255,255,255,.05); border-color: var(--primary); box-shadow: 0 0 0 3px rgba(0,212,255,.1); outline: none; color: var(--text); }
+    .form-v2 .form-control::placeholder { color: var(--text-3); }
+    .form-v2 textarea.form-control { resize: vertical; min-height: 130px; }
+    .cinfo { display: flex; align-items: flex-start; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--border); }
+    .cinfo:last-child { border-bottom: none; }
+    .cinfo-ico { width: 38px; height: 38px; min-width: 38px; background: var(--primary-dim); border-radius: 9px; display: flex; align-items: center; justify-content: center; color: var(--primary); font-size: 15px; }
+    .cinfo-lbl { font-size: 11px; text-transform: uppercase; letter-spacing: .1em; color: var(--text-3); margin-bottom: 2px; }
+    .cinfo-val { font-size: 14.5px; color: var(--text); font-weight: 500; }
+
+    /* FOOTER */
+    .footer-body { padding: 52px 0 36px; }
+    .footer-logo { font-size: 26px; font-weight: 900; letter-spacing: -0.5px; margin-bottom: 8px; }
+    .footer-logo a { color: var(--text) !important; }
+    .footer-logo span { color: var(--primary); }
+    .footer-tag { font-size: 13.5px; color: var(--text-3); margin-bottom: 24px; }
+    .footer-socials { display: flex; flex-wrap: wrap; gap: 9px; margin-bottom: 28px; }
+    .f-soc { display: flex; align-items: center; gap: 7px; background: rgba(255,255,255,.03); border: 1px solid var(--border); border-radius: 7px; padding: 7px 13px; font-size: 12.5px; color: var(--text-2) !important; font-weight: 500; transition: var(--tr); text-decoration: none !important; }
+    .f-soc:hover { border-color: var(--primary); color: var(--primary) !important; background: var(--primary-dim); }
+    .footer-divider { height: 1px; background: var(--border); margin: 22px 0; }
+    .footer-cr { font-size: 12.5px; color: var(--text-3); }
+    .footer-links-title { font-size: 11px; text-transform: uppercase; letter-spacing: .12em; color: var(--text-3); margin-bottom: 16px; }
+    .footer-links { list-style: none; padding: 0; margin: 0; }
+    .footer-links li { margin-bottom: 9px; }
+    .footer-links li a { color: var(--text-2); font-size: 13.5px; transition: var(--tr); }
+    .footer-links li a:hover { color: var(--primary); }
+
+    /* SCROLL TOP */
+    #scroll-top { position: fixed; bottom: 28px; right: 28px; z-index: 800; width: 42px; height: 42px; background: var(--primary); color: var(--bg); border: none; border-radius: 10px; font-size: 17px; cursor: pointer; display: flex; align-items: center; justify-content: center; opacity: 0; transform: translateY(10px); pointer-events: none; transition: var(--tr); box-shadow: 0 4px 18px rgba(0,212,255,.35); }
+    #scroll-top.show { opacity: 1; transform: translateY(0); pointer-events: all; }
+    #scroll-top:hover { transform: translateY(-3px); }
+
+    strong { color: var(--text); font-weight: 700; }
+    @keyframes scrollDot { 0%,100%{transform:translateY(0);opacity:1} 50%{transform:translateY(8px);opacity:.4} }
+  </style>
+</head>
+<body>
+
+<nav class="unslate_co--site-mobile-menu">
+  <div class="close-wrap" style="display:flex;">
+    <a href="#" style="display:flex;align-items:center;gap:8px;margin-left:auto;text-decoration:none;" class="js-menu-toggle">
+      <span class="close-label">Close</span>
+      <div class="close-times"><span class="bar1"></span><span class="bar2"></span></div>
+    </a>
+  </div>
+  <div class="site-mobile-inner"></div>
+</nav>
+
+<div class="unslate_co--site-wrap">
+<div class="unslate_co--site-inner">
+
+<nav class="unslate_co--site-nav site-nav-target" id="site-nav">
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-4 col-md-5">
+        <ul class="site-nav-ul js-clone-nav d-none d-lg-flex">
+          <li><a href="#home-section" class="nav-link">Home</a></li>
+          <li><a href="#about-section" class="nav-link">About</a></li>
+          <li><a href="#experience-section" class="nav-link">Experience</a></li>
+          <li><a href="#projects-section" class="nav-link">Projects</a></li>
+        </ul>
       </div>
-      <div class="site-mobile-inner"></div>
-    </nav>
-
-
-    <div class="unslate_co--site-wrap">
-
-      <div class="unslate_co--site-inner">
-
-        <div class="lines-wrap">
-          <div class="lines-inner">
-            <div class="lines"></div>
-          </div>
-        </div>
-        <!-- END lines -->
-      
-      <nav class="unslate_co--site-nav site-nav-target">
-
-        <div class="container">
-        
-          <div class="row align-items-center justify-content-between text-left">
-            <div class="col-md-5 text-right">
-              <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
-                <li>
-                  <a href="#home-section" class="nav-link">Home</a>
-                </li>
-                <li><a href="#about-section" class="nav-link">About</a></li>
-                <li><a href="#experience-section" class="nav-link">Experience</a></li>
-              </ul>
-            </div>
-            <div class="site-logo pos-absolute">
-              <a href="index.html" class="unslate_co--site-logo">Arqam<span>.</span></a>
-            </div>
-            <div class="col-md-5 text-right text-lg-left">
-              <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
-                <li><a href="#skills-section" class="nav-link">Skills</a></li>
-                <li><a href="#education-section" class="nav-link">Education</a></li>
-                <li><a href="#publications-section" class="nav-link">Publications</a></li>
-                <li><a href="#contact-section" class="nav-link">Contact</a></li>
-              </ul>
-
-              <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
-                <li><a href="#" class="js-menu-toggle">Menu</a></li>
-              </ul>
-
-            </div>
-          </div>
-        </div>
-
-      </nav>
-      <!-- END nav -->
-
-      <div class="cover-v1 jarallax" style="background-image: url('images/cover_bg_2.jpg');" id="home-section">
-        <div class="container">
-          <div class="row align-items-center">
-              
-            <div class="col-md-7 mx-auto text-center">
-              <h1 class="heading gsap-reveal-hero">Muhammad Arqam</h1>
-              <h2 class="subheading gsap-reveal-hero">Full-Stack Software Engineer & Solution Architect Based In Lisbon, Portugal</h2>
-            </div>
-
-          </div>
-        </div>
-
-
-        <a href="#about-section" class="mouse-wrap smoothscroll">
-          <span class="mouse">
-            <span class="scroll"></span>
-          </span>
-          <span class="mouse-label">Scroll</span>
-        </a>
-
+      <div class="site-logo pos-absolute">
+        <a href="index.html" class="unslate_co--site-logo">Arqam<span>.</span></a>
       </div>
-      <!-- END .cover-v1 -->
-
-
-
-
-      <div class="unslate_co--section">
-        <div class="container">
-          <div class="section-heading-wrap text-center mb-5">
-            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">My Projects</span></h2>
-            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
-          </div>
-          <div class="owl-carousel logo-slider">
-            <div class="logo-v1 gsap-reveal">
-              <h3 class="project-name">Centraleyes</h3>
-            </div>
-            <div class="logo-v1 gsap-reveal">
-              <h3 class="project-name">LockAnyTime</h3>
-            </div>
-            <div class="logo-v1 gsap-reveal">
-              <h3 class="project-name">AOTutor</h3>
-            </div>
-            <div class="logo-v1 gsap-reveal">
-              <h3 class="project-name">KeepItFresh</h3>
-            </div>
-            <div class="logo-v1 gsap-reveal">
-              <h3 class="project-name">SPEDPro</h3>
-            </div>
-            <div class="logo-v1 gsap-reveal">
-              <h3 class="project-name">GetMyOrder</h3>
-            </div>
-            <div class="logo-v1 gsap-reveal">
-              <h3 class="project-name">Impact Basketball</h3>
-            </div>
-          </div>
-        </div>
+      <div class="col-4 col-md-5" style="text-align:right;">
+        <ul class="site-nav-ul js-clone-nav d-none d-lg-flex" style="justify-content:flex-end;">
+          <li><a href="#skills-section" class="nav-link">Skills</a></li>
+          <li><a href="#testimonials-section" class="nav-link">Reviews</a></li>
+          <li><a href="#oss-section" class="nav-link">OSS</a></li>
+          <li><a href="#contact-section" class="nav-link">Contact</a></li>
+        </ul>
+        <ul class="site-nav-ul-none-onepage d-inline-block d-lg-none">
+          <li><a href="#" class="js-menu-toggle">Menu</a></li>
+        </ul>
       </div>
-
-
-      <div class="unslate_co--section" id="about-section">
-        <div class="container">
-          
-          <div class="section-heading-wrap text-center mb-5">
-            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">About Me</span></h2>
-            <span class="gsap-reveal">
-            <img src="images/divider.png" alt="divider" width="76">
-            </span>
-          </div>
-          
-
-          <div class="row mt-5 justify-content-center">
-            <div class="col-lg-10">
-              <div class="about-content-wrapper">
-                <div class="row">
-                  <div class="col-md-6 mb-4">
-                    <div class="about-card">
-                      <h3 class="mb-4 heading-h3"><span class="gsap-reveal">Professional Summary</span></h3>
-                      <p class="lead gsap-reveal">I'm a Full-Stack Software Engineer with around 8 years of experience in full-stack development that includes Web, Mobile, CMS, Hybrid, and Architecture development.</p>
-                      <p class="mb-4 gsap-reveal">My core competency is in JavaScript and RDBMs. I have various certifications and experience with MEAN Stack, MERN Stack, CMS, and serverless technologies.</p>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-4">
-                    <div class="about-card">
-                      <h3 class="mb-4 heading-h3"><span class="gsap-reveal">Key Achievements</span></h3>
-                      <ul class="achievements-list gsap-reveal">
-                        <li>Created multiple NPM packages</li>
-                        <li>Published a review paper</li>
-                        <li>Traveled internationally for onsite project discoveries</li>
-                        <li>8+ years of full-stack development experience</li>
-                        <li>Expertise in MEAN/MERN stacks</li>
-                        <li>Serverless technologies specialist</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12 text-center">
-                    <div class="about-cta gsap-reveal">
-                      <a href="#" class="btn btn-outline-pill btn-custom-light">Download my CV</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="unslate_co--section" id="experience-section">
-        <div class="container">
-
-          <div class="section-heading-wrap text-center mb-5">
-            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Work Experience</span></h2>
-            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
-          </div>
-
-          <div class="row gutter-v3">
-            <div class="col-md-12 mb-4">
-              <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
-                <h3>Principal Software Engineer | TKXEL PORTUGAL LDA</h3>
-                <p class="text-muted">07/06/2021 - CURRENT | Lisbon, Portugal</p>
-                <p>Principal Software Engineer | Tech Lead | Pre-Sales Engineer | Javascript Trainer - Level 4. Working as PSE, managing multiple projects, and reviewing PR of respective modules. Managing Bootcamps regarding JavaScript technology. Backend: Writing Lambda functions and fixing them. Frontend: Creating UI and performing mutations and queries. Database: Managing DB and creating tables using Amplify.</p>
-                <p><strong>Technologies:</strong> AWS, AWS APIs (Lambdas), Amplify, GraphQL, DynamoDB, Angular 17, Node 18</p>
-              </div> 
-            </div>
-            <div class="col-md-12 mb-4">
-              <div class="feature-v1" data-aos="fade-up" data-aos-delay="100">
-                <h3>Senior Software Engineer | SOFTCIRCLES LLC</h3>
-                <p class="text-muted">01/08/2018 - 01/06/2021 | Brooklyn, NY, United States</p>
-                <p>Senior Software Engineer | Team Lead - Level 3. Managed a team of up to 9 members and project timelines. Created & managed the architecture of each project and PR reviews. Backend: Creating project architecture, writing APIs, scripts, etc. Frontend: Creating UI according to given design and utilization of APIs. Database: Creating Schema, writing SPs, creating Views, etc.</p>
-                <p><strong>Technologies:</strong> NodeJS (Express JS, Loopback 3, Loopback 4), Angular 8, React JS, React Native, MySQL, MongoDB, PostgreSQL, WordPress, Android</p>
-              </div> 
-            </div>
-            <div class="col-md-12 mb-4">
-              <div class="feature-v1" data-aos="fade-up" data-aos-delay="200">
-                <h3>Software Engineer | ADNARE LLC</h3>
-                <p class="text-muted">01/08/2017 - 01/09/2018 | Washington, United States</p>
-                <p>Software Engineer - Level 2. Creating and managing assigned modules. Backend: Writing APIs and other backend tasks. Frontend: Creating UI and APIs utilization. Database: Managing Schema, writing SPs, creating Views, etc.</p>
-                <p><strong>Technologies:</strong> .Net (C#), Microsoft SQL Server, MS Access DB</p>
-              </div> 
-            </div>
-            <div class="col-md-12 mb-4">
-              <div class="feature-v1" data-aos="fade-up" data-aos-delay="300">
-                <h3>Associate Software Engineer | WATEEN TELECOM LLC</h3>
-                <p class="text-muted">01/02/2017 - 01/07/2017 | Abu Dhabi Emirates, United Arab Emirates</p>
-                <p>Associate Software Engineer - Level 1. Managing backend tasks and a few database tasks. Backend: Writing APIs and bug fixing in various modules. Database: Writing basic data retrieval and creation queries.</p>
-                <p><strong>Technologies:</strong> .Net (C#), MySQL</p>
-              </div> 
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="unslate_co--section section-counter" id="skills-section">
-        <div class="container">
-          <div class="section-heading-wrap text-center mb-5">
-            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">My Skills</span></h2>
-            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
-          </div>
-
-
-          <div class="row pt-5">
-            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
-              <div class="counter-v1 text-center">
-                <span class="number-wrap">
-                  <span class="number number-counter" data-number="95">0</span>
-                  <span class="append-text">%</span>
-                </span>
-                <span class="counter-label">JavaScript</span>
-              </div>
-            </div>
-            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-              <div class="counter-v1 text-center">
-                <span class="number-wrap">
-                  <span class="number number-counter" data-number="90">0</span>
-                  <span class="append-text">%</span>
-                </span>
-                <span class="counter-label">Node.js</span>
-              </div>
-            </div>
-            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-              <div class="counter-v1 text-center">
-                <span class="number-wrap">
-                  <span class="number number-counter" data-number="85">0</span>
-                  <span class="append-text">%</span>
-                </span>
-                <span class="counter-label">AWS</span>
-              </div>
-            </div>
-            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-              <div class="counter-v1 text-center">
-                <span class="number-wrap">
-                  <span class="number number-counter" data-number="88">0</span>
-                  <span class="append-text">%</span>
-                </span>
-                <span class="counter-label">Angular</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- END .counter -->
-
-      <div class="unslate_co--section" id="education-section">
-        <div class="container">
-          <div class="section-heading-wrap text-center mb-5">
-            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Education</span></h2>
-            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
-          </div>
-        </div>
-
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-8">
-              <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
-                <h3>MPhil - Post Graduation (18 Years)</h3>
-                <p class="text-muted">01/01/2020 - 01/01/2022 | University of Engineering and Technology, Lahore, Pakistan</p>
-                <p>Advanced studies in Engineering and Technology with focus on software development and system architecture.</p>
-                <p><strong>Website:</strong> <a href="https://www.uet.edu.pk/home/" target="_blank">https://www.uet.edu.pk/home/</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <!-- END testimonial -->
-
-      <div class="unslate_co--section" id="publications-section">
-        <div class="container">
-          <div class="section-heading-wrap text-center mb-5">
-            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Publications</span></h2>
-            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
-          </div>
-
-          
-          <div class="row gutter-v4 align-items-stretch">
-            <div class="col-sm-6 col-md-6 col-lg-6 blog-post-entry" data-aos="fade-up" data-aos-delay="0">
-              <div class="feature-v1 h-100">
-                <h3>Javascript Library - JS Bunch</h3>
-                <p class="text-muted">2021</p>
-                <p>This library offers a variety of utilities and helper functions for various needs, providing streamlined solutions across different domains. Each component is designed to address specific requirements, empowering users to accomplish their goals efficiently and confidently.</p>
-                <p><strong>NPM Link:</strong> <a href="https://www.npmjs.com/package/js-bunch" target="_blank">https://www.npmjs.com/package/js-bunch</a></p>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-6 blog-post-entry" data-aos="fade-up" data-aos-delay="100">
-              <div class="feature-v1 h-100">
-                <h3>Javascript Library - Expressjs-mvc-Generator</h3>
-                <p class="text-muted">2021</p>
-                <p>This library provides essential boilerplate code for connecting to multiple databases and organizing code within specific folders, facilitating efficient development workflows. With its comprehensive features, developers can easily manage databases and directories, optimizing productivity and code management practices.</p>
-                <p><strong>NPM Link:</strong> <a href="https://www.npmjs.com/package/express-generator1" target="_blank">https://www.npmjs.com/package/express-generator1</a></p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <!-- END blog posts -->
-
-
-      <div class="unslate_co--section" id="contact-section">
-        <div class="container">
-          <div class="section-heading-wrap text-center mb-5">
-            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Get In Touch</span></h2>
-            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
-          </div>
-
-
-          <div class="row justify-content-between">
-            
-            <div class="col-md-6">
-              <form method="post" class="form-outline-style-v1" id="contactForm">
-                <div class="form-group row mb-0">
-
-                  <div class="col-lg-6 form-group gsap-reveal">
-                    <label for="name">Name</label>
-                    <input name="name" type="text" class="form-control" id="name">
-                  </div>
-                  <div class="col-lg-6 form-group gsap-reveal">
-                    <label for="email">Email</label>
-                    <input name="email" type="email" class="form-control" id="email">
-                  </div>
-                  <div class="col-lg-12 form-group gsap-reveal">
-                    <label for="message">Write your message...</label>
-                    <textarea name="message" id="message" cols="30" rows="7" class="form-control"></textarea>
-                  </div>
-                </div>
-                <div class="form-group row gsap-reveal">
-                    <div class="col-md-12 d-flex align-items-center">
-                      <input type="submit" class="btn btn-outline-pill btn-custom-light mr-3" value="Send Message">
-                      <span class="submitting"></span>
-                    </div>
-                  </div>
-              </form>
-              <div id="form-message-warning" class="mt-4"></div> 
-              <div id="form-message-success">
-                Your message was sent, thank you!
-              </div>
-
-            </div>
-
-            <div class="col-md-4">
-              <div class="contact-info-v1">
-                <div class="gsap-reveal d-block">
-                  <span class="d-block contact-info-label">Email</span>
-                  <a href="mailto:arqam.career@gmail.com" class="contact-info-val">arqam.career@gmail.com</a>
-                </div>
-                <div class="gsap-reveal d-block">
-                  <span class="d-block contact-info-label">Phone</span>
-                  <a href="tel:+351912998774" class="contact-info-val">(+351) 912998774</a>
-                </div>
-                <div class="gsap-reveal d-block">
-                  <span class="d-block contact-info-label">Address</span>
-                  <address class="contact-info-val">R. dos Soeiros, 1500-580 <br> Lisbon, Portugal</address>
-                </div>
-                <div class="gsap-reveal d-block">
-                  <span class="d-block contact-info-label">LinkedIn</span>
-                  <a href="https://www.linkedin.com/in/muhammadarqam-845b4614b/" target="_blank" class="contact-info-val">LinkedIn Profile</a>
-                </div>
-                <div class="gsap-reveal d-block">
-                  <span class="d-block contact-info-label">Skype</span>
-                  <a href="https://join.skype.com/invite/gwCOX6trJd1v" target="_blank" class="contact-info-val">Join Skype</a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      </div> <!-- END .unslate_co-site-inner -->
-
-      <footer class="unslate_co--footer unslate_co--section">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-7">
-              
-              <div class="footer-site-logo"><a href="#">Arqam<span>.</span></a></div>
-
-              <ul class="footer-site-social">
-                <li><a href="https://www.linkedin.com/in/muhammadarqam-845b4614b/" target="_blank">LinkedIn</a></li>
-                <li><a href="https://github.com/arqam-dev" target="_blank">GitHub</a></li>
-                <li><a href="https://join.skype.com/invite/gwCOX6trJd1v" target="_blank">Skype</a></li>
-                <li><a href="mailto:arqam.career@gmail.com">Email</a></li>
-              </ul>
-
-              <p class="site-copyright">
-                Copyright &copy;
-                <script>
-                  document.write(new Date().getFullYear());
-                </script> Muhammad Arqam. All rights reserved | Full-Stack Software Engineer & Solution Architect
-              </p>
-
-            </div>
-          </div>
-        </div>
-      </footer>
-
-      
     </div>
+  </div>
+</nav>
 
-    
-    <!-- Loader -->
-    <div id="unslate_co--overlayer"></div>
-    <div class="site-loader-wrap">
-      <div class="site-loader"></div>
+<!-- ===== HERO ===== -->
+<section id="home-section">
+  <div class="hero-bg-glow"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-lg-7">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Open to Remote Worldwide &nbsp;&bull;&nbsp; Lisbon, Portugal
+          </div>
+          <h1 class="hero-name">Arqam<br><span class="grad">Muhammad</span></h1>
+          <div class="hero-typed-row">
+            <span class="typed-prefix">// &nbsp;</span>
+            <span id="typed-out"></span><span class="typed-cur">|</span>
+          </div>
+          <p class="hero-lead">
+            Principal Software Engineer &amp; Tech Lead with <strong>9+ years</strong> building
+            scalable, cloud-native software products across <strong>Europe, the US, and the Middle East</strong>.
+            Expert in Node.js, TypeScript, React, Angular, and AWS. Currently at <strong>Tkxel, Lisbon</strong>.
+          </p>
+          <div class="hero-cta">
+            <a href="https://codewitharqam.com" target="_blank" class="btn-solid">
+              <i class="fas fa-graduation-cap"></i> CodeWithArqam
+            </a>
+            <a href="#contact-section" class="btn-ghost smoothscroll">
+              <i class="fas fa-paper-plane"></i> Hire Me
+            </a>
+          </div>
+          <div class="hero-socials">
+            <span class="hero-socials-label">Find me on</span>
+            <a href="https://www.linkedin.com/in/muhammadarqam-845b4614b/" target="_blank" class="s-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/arqam-dev" target="_blank" class="s-icon" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://stackoverflow.com/users" target="_blank" class="s-icon" title="Stack Overflow"><i class="fab fa-stack-overflow"></i></a>
+            <a href="https://codewitharqam.com" target="_blank" class="s-icon" title="CodeWithArqam"><i class="fas fa-code"></i></a>
+            <a href="https://www.npmjs.com/~arqam-dev" target="_blank" class="s-icon" title="NPM"><i class="fab fa-npm"></i></a>
+            <a href="mailto:arqam.career@gmail.com" class="s-icon" title="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-5 d-none d-lg-block">
+        <div class="hero-right">
+          <div class="hero-photo-wrap">
+            <div class="ring1"></div>
+            <div class="ring2"></div>
+            <!-- Replace with your actual photo: <img src="images/your-photo.jpg" alt="Arqam Muhammad" style="width:300px;height:300px;object-fit:cover;border-radius:50%;border:2px solid var(--primary-border);position:relative;z-index:2;"> -->
+            <div class="hero-avatar">
+              <span class="hero-avatar-initials">AM</span>
+              <span class="hero-avatar-hint">Add your photo</span>
+            </div>
+            <span class="float-badge"><i class="fab fa-node-js"></i>&nbsp;Node.js</span>
+            <span class="float-badge"><i class="fab fa-aws"></i>&nbsp;AWS</span>
+            <span class="float-badge"><i class="fab fa-angular"></i>&nbsp;Angular</span>
+            <span class="float-badge"><i class="fab fa-react"></i>&nbsp;React</span>
+          </div>
+          <div class="hero-stats-row">
+            <div class="stat-card"><span class="stat-num">9+</span><span class="stat-lbl">Years Exp.</span></div>
+            <div class="stat-card"><span class="stat-num">20+</span><span class="stat-lbl">Projects Shipped</span></div>
+            <div class="stat-card"><span class="stat-num">3</span><span class="stat-lbl">Continents</span></div>
+            <div class="stat-card"><span class="stat-num">2</span><span class="stat-lbl">NPM Packages</span></div>
+          </div>
+        </div>
+      </div>
+
     </div>
+  </div>
+  <a href="#about-section" class="smoothscroll" style="position:absolute;bottom:28px;left:50%;transform:translateX(-50%);z-index:10;display:flex;flex-direction:column;align-items:center;gap:6px;text-decoration:none;">
+    <span style="width:26px;height:42px;border:2px solid rgba(255,255,255,.18);border-radius:13px;display:flex;align-items:flex-start;justify-content:center;padding-top:6px;">
+      <span style="width:4px;height:8px;background:var(--primary);border-radius:2px;animation:scrollDot 1.6s ease-in-out infinite;"></span>
+    </span>
+    <span style="font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-3);">Scroll</span>
+  </a>
+</section>
 
-    <script src="js/scripts-dist.js"></script>
-    <script src="js/main.js"></script>
+<div class="section-divider"></div>
 
-  </body>
+<!-- ===== ABOUT ===== -->
+<section class="section-v2" id="about-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right" data-aos-duration="700">
+        <!-- Replace about-code-panel with <div class="about-img-outer"><img src="images/your-photo.jpg" alt="Arqam Muhammad"><div class="about-img-deco"></div></div> once you have your real photo -->
+        <div class="about-code-panel">
+          <div class="acp-bar">
+            <span class="cw-dot cw-dot-r"></span><span class="cw-dot cw-dot-y"></span><span class="cw-dot cw-dot-g"></span>
+            <span style="margin-left:10px;font-family:var(--mono);font-size:12px;color:var(--text-3);">arqam.json</span>
+          </div>
+          <div class="acp-body">
+            <div class="acp-section">
+              <span class="acp-comment">// Who I am</span><br>
+              <span class="acp-key">name</span>: <span class="acp-val">"Arqam Muhammad"</span><br>
+              <span class="acp-key">title</span>: <span class="acp-val">"Principal Software Engineer"</span><br>
+              <span class="acp-key">base</span>: <span class="acp-val">"Lisbon, Portugal"</span><br>
+              <span class="acp-key">experience</span>: <span class="acp-num">"9+ years"</span>
+            </div>
+            <div class="acp-section">
+              <span class="acp-comment">// What I build</span><br>
+              <span class="acp-key">stack</span>: [<br>
+              <span class="acp-arr-item">"Node.js", "TypeScript", "React",</span>
+              <span class="acp-arr-item">"Angular", "NestJS", "GraphQL",</span>
+              <span class="acp-arr-item">"AWS", "Docker", "Terraform"</span>
+              ]<br>
+            </div>
+            <div class="acp-section">
+              <span class="acp-comment">// Reach me</span><br>
+              <span class="acp-key">web</span>: <span class="acp-str">"codewitharqam.com"</span><br>
+              <span class="acp-key">openToRemote</span>: <span class="acp-num">true</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 offset-lg-1" data-aos="fade-left" data-aos-duration="700">
+        <div class="sec-tag">About Me</div>
+        <h2 class="sec-title">Principal Engineer<br>&amp; Tech Lead</h2>
+        <div class="available-pill"><span class="adot"></span>Available for Remote Opportunities Worldwide</div>
+        <p style="color:var(--text-2);font-size:16px;line-height:1.9;margin-bottom:16px;">
+          If you're here, you're probably looking for someone who can <strong>build, lead, and ship</strong> — not just talk about it.
+        </p>
+        <p style="color:var(--text-2);font-size:16px;line-height:1.9;margin-bottom:16px;">
+          <strong>Principal Software Engineer and Tech Lead</strong> with 9+ years of experience building scalable,
+          cloud-native software products across <strong>Europe, the U.S., and the Middle East</strong>. I specialise in
+          full-stack JavaScript ecosystems (Node.js, React, Angular, TypeScript) and modern cloud architectures on AWS —
+          serverless, GraphQL APIs, and event-driven systems.
+        </p>
+        <p style="color:var(--text-2);font-size:16px;line-height:1.9;margin-bottom:28px;">
+          I have delivered products end-to-end, from architecture decisions to production deployments. Beyond engineering,
+          I lead distributed teams, drive technical strategy, and mentor engineers at every level. I run
+          <a href="https://codewitharqam.com" target="_blank" style="color:var(--primary);font-weight:600;">CodeWithArqam</a>
+          — a portfolio &amp; blog for the engineering community.
+        </p>
+        <div class="stat-strip">
+          <div class="strip-item"><span class="strip-num">9+</span><span class="strip-lbl">Years Exp.</span></div>
+          <div class="strip-item"><span class="strip-num">20+</span><span class="strip-lbl">Projects</span></div>
+          <div class="strip-item"><span class="strip-num">5</span><span class="strip-lbl">Companies</span></div>
+          <div class="strip-item"><span class="strip-num">4</span><span class="strip-lbl">Countries</span></div>
+        </div>
+        <div class="highlight-row" data-aos="fade-up" data-aos-delay="0">
+          <div class="hl-icon"><i class="fas fa-rocket"></i></div>
+          <div><div class="hl-title">40% Faster Mobile TTM</div><p class="hl-desc">Reduced mobile time-to-market by ~40% through shared React Native codebases</p></div>
+        </div>
+        <div class="highlight-row" data-aos="fade-up" data-aos-delay="80">
+          <div class="hl-icon"><i class="fas fa-users"></i></div>
+          <div><div class="hl-title">Led Teams of 9 Engineers</div><p class="hl-desc">Delivering products for US, EU, and Middle East markets — on time, on spec</p></div>
+        </div>
+        <div class="highlight-row" data-aos="fade-up" data-aos-delay="160">
+          <div class="hl-icon"><i class="fas fa-plane"></i></div>
+          <div><div class="hl-title">5+ Countries Onsite</div><p class="hl-desc">Conducted onsite project discoveries across 5+ countries; Level 4 JS Trainer</p></div>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:28px;">
+          <a href="mailto:arqam.career@gmail.com" class="btn-solid"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+          <a href="https://www.linkedin.com/in/muhammadarqam-845b4614b/" target="_blank" class="btn-ghost"><i class="fab fa-linkedin-in"></i> LinkedIn Profile</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ===== SKILLS ===== -->
+<section class="section-v2" id="skills-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-right">
+        <div class="sec-tag">Technical Skills</div>
+        <h2 class="sec-title">My Tech<br>Arsenal</h2>
+        <p class="sec-sub mb-5" style="font-size:15px;">A decade of hands-on experience across the full stack — from pixel-perfect frontends to AWS infrastructure.</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-hd"><span class="skill-bar-name">Node.js / TypeScript</span><span class="skill-bar-pct">95%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-w="95"></div></div>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-hd"><span class="skill-bar-name">Angular / React / Next.js</span><span class="skill-bar-pct">90%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-w="90"></div></div>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-hd"><span class="skill-bar-name">AWS Cloud Architecture</span><span class="skill-bar-pct">88%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-w="88"></div></div>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-hd"><span class="skill-bar-name">GraphQL / REST APIs</span><span class="skill-bar-pct">93%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-w="93"></div></div>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-hd"><span class="skill-bar-name">SQL + NoSQL Databases</span><span class="skill-bar-pct">90%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-w="90"></div></div>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-hd"><span class="skill-bar-name">Docker / Terraform / CI/CD</span><span class="skill-bar-pct">83%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-w="83"></div></div>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-hd"><span class="skill-bar-name">Engineering Leadership</span><span class="skill-bar-pct">92%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-w="92"></div></div>
+        </div>
+      </div>
+
+      <div class="col-lg-7 offset-lg-1" data-aos="fade-left" data-aos-delay="100">
+        <div class="tech-cat">
+          <div class="tech-cat-label">Frontend</div>
+          <div class="tech-grid">
+            <span class="t-tag"><i class="fab fa-angular" style="color:#dd0031"></i> Angular</span>
+            <span class="t-tag"><i class="fab fa-react" style="color:#61dafb"></i> React</span>
+            <span class="t-tag"><i class="fab fa-react" style="color:#61dafb"></i> Next.js</span>
+            <span class="t-tag"><i class="fab fa-js" style="color:#f7df1e"></i> TypeScript</span>
+            <span class="t-tag">RxJS</span>
+            <span class="t-tag">GraphQL</span>
+            <span class="t-tag">Tailwind CSS</span>
+          </div>
+        </div>
+        <div class="tech-cat">
+          <div class="tech-cat-label">Backend</div>
+          <div class="tech-grid">
+            <span class="t-tag"><i class="fab fa-node-js" style="color:#68a063"></i> Node.js</span>
+            <span class="t-tag">NestJS</span>
+            <span class="t-tag">Express.js</span>
+            <span class="t-tag">Loopback 4</span>
+            <span class="t-tag"><i class="fab fa-python" style="color:#3572a5"></i> Python</span>
+            <span class="t-tag">Ruby on Rails</span>
+            <span class="t-tag">.NET / C#</span>
+            <span class="t-tag">REST &amp; GraphQL</span>
+          </div>
+        </div>
+        <div class="tech-cat">
+          <div class="tech-cat-label">Cloud &amp; DevOps</div>
+          <div class="tech-grid">
+            <span class="t-tag"><i class="fab fa-aws" style="color:#ff9900"></i> AWS Lambda</span>
+            <span class="t-tag"><i class="fab fa-aws" style="color:#ff9900"></i> ECS / EKS</span>
+            <span class="t-tag"><i class="fab fa-aws" style="color:#ff9900"></i> EC2 / RDS / S3</span>
+            <span class="t-tag"><i class="fab fa-aws" style="color:#ff9900"></i> DynamoDB</span>
+            <span class="t-tag"><i class="fab fa-aws" style="color:#ff9900"></i> Cognito / Amplify</span>
+            <span class="t-tag">GCP</span>
+            <span class="t-tag"><i class="fab fa-docker" style="color:#0db7ed"></i> Docker</span>
+            <span class="t-tag">Terraform</span>
+            <span class="t-tag">CI/CD</span>
+          </div>
+        </div>
+        <div class="tech-cat">
+          <div class="tech-cat-label">Databases</div>
+          <div class="tech-grid">
+            <span class="t-tag">PostgreSQL</span>
+            <span class="t-tag">MongoDB</span>
+            <span class="t-tag">MySQL</span>
+            <span class="t-tag">Redis</span>
+            <span class="t-tag">DynamoDB</span>
+            <span class="t-tag">Amazon S3</span>
+            <span class="t-tag">MS SQL Server</span>
+          </div>
+        </div>
+        <div class="tech-cat">
+          <div class="tech-cat-label">Architecture</div>
+          <div class="tech-grid">
+            <span class="t-tag">Microservices</span>
+            <span class="t-tag">Serverless</span>
+            <span class="t-tag">Event-Driven</span>
+            <span class="t-tag">SOA</span>
+            <span class="t-tag">DDD</span>
+            <span class="t-tag">Multi-Tenancy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ===== EXPERIENCE ===== -->
+<section class="section-v2" id="experience-section">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-7">
+        <div class="sec-tag">Career</div>
+        <h2 class="sec-title">Work Experience</h2>
+      </div>
+    </div>
+    <div class="timeline">
+
+      <div class="tl-item" data-aos="fade-up">
+        <div class="tl-card">
+          <div class="tl-top"><span class="tl-company">Tkxel Portugal LDA</span><span class="tl-badge">Current</span></div>
+          <div class="tl-role">Principal Software Engineer &nbsp;|&nbsp; Tech Lead &nbsp;|&nbsp; Pre-Sales Engineer</div>
+          <div class="tl-meta"><i class="fas fa-calendar-alt"></i>&nbsp;Oct 2022 – Present &nbsp;&bull;&nbsp;<i class="fas fa-map-marker-alt"></i>&nbsp;Lisbon, Portugal</div>
+          <p class="tl-desc">Leading development of scalable web and cloud solutions, improving system performance by 30% through back-end and API optimizations. Managing multiple concurrent projects, running JS bootcamps (Level 4 Trainer), conducting technical pre-sales, and mentoring a growing engineering team.</p>
+          <div class="tl-pills"><span class="pill">Node.js 18</span><span class="pill">Angular 17</span><span class="pill">TypeScript</span><span class="pill">AWS Lambda</span><span class="pill">GraphQL</span><span class="pill">DynamoDB</span><span class="pill">Amplify</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item" data-aos="fade-up" data-aos-delay="50">
+        <div class="tl-card">
+          <div class="tl-top"><span class="tl-company">Tkxel LLC</span></div>
+          <div class="tl-role">Senior Software Engineer</div>
+          <div class="tl-meta"><i class="fas fa-calendar-alt"></i>&nbsp;Jun 2021 – Oct 2022 &nbsp;&bull;&nbsp;<i class="fas fa-map-marker-alt"></i>&nbsp;Remote</div>
+          <p class="tl-desc">Built the Centraleyes cyber-risk platform on a fully serverless AWS stack — handling Lambda functions, DynamoDB data modelling, Angular UI, and GraphQL APIs for 100+ compliance frameworks.</p>
+          <div class="tl-pills"><span class="pill">Angular</span><span class="pill">Node.js</span><span class="pill">AWS Serverless</span><span class="pill">DynamoDB</span><span class="pill">GraphQL</span><span class="pill">SNS / SQS</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="tl-card">
+          <div class="tl-top"><span class="tl-company">SoftCircles LTD</span></div>
+          <div class="tl-role">Senior Software Engineer &nbsp;|&nbsp; Team Lead</div>
+          <div class="tl-meta"><i class="fas fa-calendar-alt"></i>&nbsp;Oct 2018 – Jun 2021 &nbsp;&bull;&nbsp;<i class="fas fa-map-marker-alt"></i>&nbsp;Brooklyn, NY — Remote</div>
+          <p class="tl-desc">Led a team of up to 9 members across multiple products. Improved delivery timelines by 20% via structured PR reviews and collaboration. Architected SPEDPro, AOTutor, KeepItFresh, Abloh, and LockAnyTime.</p>
+          <div class="tl-pills"><span class="pill">Node.js</span><span class="pill">Angular 8</span><span class="pill">React</span><span class="pill">React Native</span><span class="pill">MySQL</span><span class="pill">MongoDB</span><span class="pill">PostgreSQL</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item" data-aos="fade-up" data-aos-delay="150">
+        <div class="tl-card">
+          <div class="tl-top"><span class="tl-company">Adnare LTD</span></div>
+          <div class="tl-role">Software Engineer</div>
+          <div class="tl-meta"><i class="fas fa-calendar-alt"></i>&nbsp;Aug 2017 – Sep 2018 &nbsp;&bull;&nbsp;<i class="fas fa-map-marker-alt"></i>&nbsp;Redmond, WA — Remote</div>
+          <p class="tl-desc">Managed coding, design, layout, and full database for the Sheikh Zayed Hospital healthcare management project including patient management, billing, and reporting modules.</p>
+          <div class="tl-pills"><span class="pill">.NET / C#</span><span class="pill">MS SQL Server</span><span class="pill">PostgreSQL</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item" data-aos="fade-up" data-aos-delay="200">
+        <div class="tl-card">
+          <div class="tl-top"><span class="tl-company">Wateen Telecom LLC</span></div>
+          <div class="tl-role">Associate Software Engineer</div>
+          <div class="tl-meta"><i class="fas fa-calendar-alt"></i>&nbsp;Jun 2016 – Jul 2017 &nbsp;&bull;&nbsp;<i class="fas fa-map-marker-alt"></i>&nbsp;Abu Dhabi, UAE</div>
+          <p class="tl-desc">Backend API development, bug fixing, and database query optimisation in the telecom domain.</p>
+          <div class="tl-pills"><span class="pill">.NET / C#</span><span class="pill">MySQL</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ===== PROJECTS ===== -->
+<section class="section-v2" id="projects-section">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-8">
+        <div class="sec-tag">Portfolio</div>
+        <h2 class="sec-title">Featured Projects</h2>
+        <p class="sec-sub">Enterprise-grade products across fintech, health-tech, HR, and cybersecurity.</p>
+      </div>
+    </div>
+    <div class="projects-grid">
+
+      <div class="proj-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="proj-top"><div class="proj-icon"><i class="fas fa-book-open"></i></div><span class="proj-period">May 2025 – Present</span></div>
+        <div class="proj-title">Epilogue Systems</div>
+        <div class="proj-domain">Digital Adoption Platform · DAP</div>
+        <p class="proj-desc">Enterprise DAP simplifying how users learn complex software — auto-generates documentation via OPUS Recorder and delivers real-time in-app guidance. Microservices + serverless on ECS/EKS.</p>
+        <div class="tl-pills" style="margin-bottom:18px;"><span class="pill">Node.js</span><span class="pill">Angular</span><span class="pill">AWS ECS/EKS</span><span class="pill">MongoDB</span><span class="pill">Terraform</span></div>
+      </div>
+
+      <div class="proj-card" data-aos="fade-up" data-aos-delay="60">
+        <div class="proj-top"><div class="proj-icon"><i class="fas fa-shield-alt"></i></div><span class="proj-period">Aug 2021 – Apr 2025</span></div>
+        <div class="proj-title">Centraleyes</div>
+        <div class="proj-domain">Cyber Risk &amp; Compliance Management</div>
+        <p class="proj-desc">Cloud-native risk platform with 100+ pre-populated compliance frameworks, automated orchestration, real-time risk dashboards, and single-day customer onboarding.</p>
+        <div class="tl-pills" style="margin-bottom:18px;"><span class="pill">Angular</span><span class="pill">NodeJS</span><span class="pill">AWS Lambda</span><span class="pill">DynamoDB</span><span class="pill">GraphQL</span></div>
+        <a href="https://www.centraleyes.com" target="_blank" class="proj-link">View Project <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="proj-card" data-aos="fade-up" data-aos-delay="120">
+        <div class="proj-top"><div class="proj-icon"><i class="fas fa-users-cog"></i></div><span class="proj-period">Nov 2022 – Aug 2023</span></div>
+        <div class="proj-title">RTS — RealTime IT</div>
+        <div class="proj-domain">HR Tech · Recruitment Platform</div>
+        <p class="proj-desc">Multi-tenant onboarding platform covering hiring workflows, interview scheduling, government forms, and background verification via First Advantage with multi-schema PostgreSQL.</p>
+        <div class="tl-pills" style="margin-bottom:18px;"><span class="pill">Ruby on Rails</span><span class="pill">Angular 14</span><span class="pill">PostgreSQL</span><span class="pill">Multi-tenancy</span></div>
+      </div>
+
+      <div class="proj-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="proj-top"><div class="proj-icon"><i class="fas fa-file-contract"></i></div><span class="proj-period">Jun – Dec 2024</span></div>
+        <div class="proj-title">OpenSourceCM</div>
+        <div class="proj-domain">Contract Lifecycle Management</div>
+        <p class="proj-desc">Contract management system automating the entire lifecycle from drafting &amp; negotiation to tracking &amp; renewal — improving compliance and reducing revenue loss.</p>
+        <div class="tl-pills" style="margin-bottom:18px;"><span class="pill">Node.js</span><span class="pill">AngularJS</span></div>
+        <a href="https://www.opensourcecm.com" target="_blank" class="proj-link">View Project <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="proj-card" data-aos="fade-up" data-aos-delay="60">
+        <div class="proj-top"><div class="proj-icon"><i class="fas fa-heartbeat"></i></div><span class="proj-period">Mar 2019 – Jun 2021</span></div>
+        <div class="proj-title">SPEDPro</div>
+        <div class="proj-domain">Special Education · Texas State</div>
+        <p class="proj-desc">Statewide case management for special-needs students in Texas — connecting teachers, parents, diagnosticians, and government agencies for goal-based individual study plans.</p>
+        <div class="tl-pills" style="margin-bottom:18px;"><span class="pill">Node.js</span><span class="pill">Express.js</span><span class="pill">MySQL</span></div>
+      </div>
+
+      <div class="proj-card" data-aos="fade-up" data-aos-delay="120">
+        <div class="proj-top"><div class="proj-icon"><i class="fas fa-boxes"></i></div><span class="proj-period">Aug 2020 – Jan 2021</span></div>
+        <div class="proj-title">KeepItFresh</div>
+        <div class="proj-domain">Digital Inventory Management</div>
+        <p class="proj-desc">Mobile + web platform for distributors to track inventory from suppliers to customers, with online payment integration for complete supply-chain and financial visibility.</p>
+        <div class="tl-pills" style="margin-bottom:18px;"><span class="pill">JavaScript</span><span class="pill">Node.js</span><span class="pill">React Native</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ===== CODEWITHARQAM ===== -->
+<section class="section-v2" id="learning-section">
+  <div class="container">
+    <div class="spotlight-wrap" data-aos="fade-up">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <div class="sec-tag">Learning Platform</div>
+          <h2 class="spotlight-title">Learn Modern<br>Engineering at<br><span>CodeWithArqam</span></h2>
+          <p style="color:var(--text-2);font-size:16px;line-height:1.9;margin-bottom:26px;">A platform I built to share real-world engineering knowledge — from Node.js internals and AWS architecture to system design patterns and TypeScript best practices.</p>
+          <div class="feat-row"><i class="fas fa-check-circle feat-icon"></i><span class="feat-text">Node.js, NestJS &amp; TypeScript deep-dives</span></div>
+          <div class="feat-row"><i class="fas fa-check-circle feat-icon"></i><span class="feat-text">AWS Cloud architecture &amp; serverless tutorials</span></div>
+          <div class="feat-row"><i class="fas fa-check-circle feat-icon"></i><span class="feat-text">System design &amp; microservices patterns</span></div>
+          <div class="feat-row"><i class="fas fa-check-circle feat-icon"></i><span class="feat-text">Real-world project walkthroughs &amp; code labs</span></div>
+          <div style="margin-top:32px;"><a href="https://codewitharqam.com" target="_blank" class="btn-solid"><i class="fas fa-external-link-alt"></i> Visit CodeWithArqam</a></div>
+        </div>
+        <div class="col-lg-5 offset-lg-1 d-none d-lg-block">
+          <div class="code-window">
+            <div class="code-window-bar">
+              <span class="cw-dot cw-dot-r"></span><span class="cw-dot cw-dot-y"></span><span class="cw-dot cw-dot-g"></span>
+              <span class="cw-url">codewitharqam.com</span>
+            </div>
+            <div class="code-body">
+              <span><span class="c-kw">const</span> <span class="c-var">engineer</span> = {</span>
+              <span class="c-in"><span class="c-key">name</span>: <span class="c-str">"Arqam Muhammad"</span>,</span>
+              <span class="c-in"><span class="c-key">role</span>: <span class="c-str">"Principal Engineer"</span>,</span>
+              <span class="c-in"><span class="c-key">teaches</span>: [</span>
+              <span class="c-in" style="padding-left:40px;"><span class="c-str">"Node.js"</span>, <span class="c-str">"TypeScript"</span>,</span>
+              <span class="c-in" style="padding-left:40px;"><span class="c-str">"AWS"</span>, <span class="c-str">"System Design"</span></span>
+              <span class="c-in">],</span>
+              <span class="c-in"><span class="c-key">location</span>: <span class="c-str">"Lisbon, Portugal"</span>,</span>
+              <span class="c-in"><span class="c-key">openToRemote</span>: <span class="c-bool">true</span>,</span>
+              <span class="c-in"><span class="c-key">platform</span>: <span class="c-str">"codewitharqam.com"</span></span>
+              <span>};</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="section-v2" id="testimonials-section">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-8">
+        <div class="sec-tag">Recommendations</div>
+        <h2 class="sec-title">What Colleagues Say</h2>
+        <p class="sec-sub">Genuine feedback from teammates, managers &amp; clients.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="test-card">
+          <a href="https://www.linkedin.com/in/muhammadarqam-845b4614b/" target="_blank" class="test-li"><i class="fab fa-linkedin"></i></a>
+          <div class="test-quote">"</div>
+          <p class="test-text">He brings a consistently positive energy and approaches every task with care, professionalism, and a genuine desire to deliver quality results. What really sets Arqam apart is his willingness to help others grow — always ready to offer support. Extremely polite, approachable, and endlessly helpful.</p>
+          <div class="test-author">
+            <div class="test-av">NZ</div>
+            <div><div class="test-name">Natalia Zielinska</div><div class="test-role">Digital Wingman @ Tkxel &nbsp;·&nbsp; Nov 2025</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="test-card">
+          <a href="https://www.linkedin.com/in/muhammadarqam-845b4614b/" target="_blank" class="test-li"><i class="fab fa-linkedin"></i></a>
+          <div class="test-quote">"</div>
+          <p class="test-text">Arqam has been incredibly patient and supportive — consistently taking time to explain concepts clearly and guide through challenges without hesitation. Beyond his strong technical skills, he has a standout work ethic and is readily available when you need him.</p>
+          <div class="test-author">
+            <div class="test-av">EB</div>
+            <div><div class="test-name">Emil Bero</div><div class="test-role">Software Engineer · MSSE @ Drexel Univ. &nbsp;·&nbsp; Nov 2025</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="150">
+        <div class="test-card">
+          <a href="https://www.linkedin.com/in/muhammadarqam-845b4614b/" target="_blank" class="test-li"><i class="fab fa-linkedin"></i></a>
+          <div class="test-quote">"</div>
+          <p class="test-text">I was consistently impressed by his professionalism, deep knowledge, and technical skills. His strong sense of responsibility and leadership in code development make him a valuable asset to any team. I highly recommend Arqam — he will bring great value wherever he contributes.</p>
+          <div class="test-author">
+            <div class="test-av">JY</div>
+            <div><div class="test-name">Jay Yehuda Raz</div><div class="test-role">CTO | CISO &nbsp;·&nbsp; May 2025</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="test-card">
+          <a href="https://www.linkedin.com/in/muhammadarqam-845b4614b/" target="_blank" class="test-li"><i class="fab fa-linkedin"></i></a>
+          <div class="test-quote">"</div>
+          <p class="test-text">I had the pleasure of working closely with him — first as a senior developer and later as team leader over four years. I witnessed his professional growth, technical expertise, and natural leadership abilities firsthand. Arqam consistently demonstrated exceptional commitment to his work.</p>
+          <div class="test-author">
+            <div class="test-av">ON</div>
+            <div><div class="test-name">Ofir Nadav</div><div class="test-role">R&amp;D Team Leader @ Centraleyes &nbsp;·&nbsp; May 2025</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ===== OSS / PUBLICATIONS ===== -->
+<section class="section-v2" id="oss-section">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-8">
+        <div class="sec-tag">Open Source</div>
+        <h2 class="sec-title">NPM Packages &amp;<br>Publications</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="oss-card">
+          <div class="oss-label"><i class="fab fa-npm"></i>&nbsp; npm package</div>
+          <div class="oss-title">js-bunch</div>
+          <p class="oss-desc">A comprehensive JavaScript utility library offering helper functions for diverse needs — from array manipulation to date utilities. Helps developers accomplish common tasks efficiently with minimal boilerplate.</p>
+          <a href="https://www.npmjs.com/~arqam-dev" target="_blank" class="oss-link"><i class="fab fa-npm"></i> View on NPM <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="80">
+        <div class="oss-card">
+          <div class="oss-label"><i class="fab fa-npm"></i>&nbsp; npm package</div>
+          <div class="oss-title">expressjs-mvc-generator</div>
+          <p class="oss-desc">Express.js MVC boilerplate generator — scaffolds multi-database connections and organises code into clean MVC folders, accelerating project setup and enforcing consistent structure.</p>
+          <a href="https://www.npmjs.com/~arqam-dev" target="_blank" class="oss-link"><i class="fab fa-npm"></i> View on NPM <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="160">
+        <div class="oss-card">
+          <div class="oss-label purple"><i class="fas fa-file-alt"></i>&nbsp; Research Paper</div>
+          <div class="oss-title plain">Published Research</div>
+          <p class="oss-desc">Published a peer-reviewed research paper during MPhil studies at the University of Engineering and Technology (UET), Lahore — focused on software engineering methodologies and scalable architecture.</p>
+          <span style="font-size:12px;color:var(--text-3);">UET Lahore · 2020–2022</span>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="240">
+        <div class="oss-card">
+          <div class="oss-label green"><i class="fas fa-graduation-cap"></i>&nbsp; Education</div>
+          <div class="oss-title plain">MPhil Engineering &amp; Technology</div>
+          <p class="oss-desc">Post-graduate degree from the University of Engineering and Technology Lahore — one of Pakistan's top-ranked engineering universities. Focused on software systems research and architecture.</p>
+          <a href="https://www.uet.edu.pk/home/" target="_blank" class="oss-link" style="color:var(--accent) !important;">UET Lahore <i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ===== CONTACT ===== -->
+<section class="section-v2" id="contact-section">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-6">
+        <div class="sec-tag">Contact</div>
+        <h2 class="sec-title">Let's Build<br>Something Great</h2>
+        <p class="sec-sub">Open to full-time remote roles, consulting, and global collaborations.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-7 mb-4 mb-lg-0" data-aos="fade-right">
+        <div class="contact-card">
+          <form method="post" class="form-v2" id="contactForm">
+            <div class="row">
+              <div class="col-sm-6" style="padding-right:8px;margin-bottom:16px;">
+                <label for="name">Your Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="John Doe" required>
+              </div>
+              <div class="col-sm-6" style="padding-left:8px;margin-bottom:16px;">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="john@example.com" required>
+              </div>
+              <div class="col-12" style="margin-bottom:16px;">
+                <label for="subject">Subject</label>
+                <input type="text" class="form-control" id="subject" name="subject" placeholder="What is this about?">
+              </div>
+              <div class="col-12" style="margin-bottom:20px;">
+                <label for="message">Your Message</label>
+                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..."></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn-solid"><i class="fas fa-paper-plane"></i> Send Message</button>
+                <span class="submitting" style="margin-left:12px;font-size:13px;color:var(--text-3);"></span>
+              </div>
+            </div>
+          </form>
+          <div id="form-message-warning" class="mt-3" style="color:#ff5555;font-size:14px;"></div>
+          <div id="form-message-success" class="mt-3" style="color:var(--accent);font-size:14px;display:none;">Your message was sent — I will get back to you soon!</div>
+        </div>
+      </div>
+      <div class="col-lg-5" data-aos="fade-left" data-aos-delay="100">
+        <div class="contact-card" style="height:100%;">
+          <div class="cinfo"><div class="cinfo-ico"><i class="fas fa-envelope"></i></div><div><div class="cinfo-lbl">Email</div><a href="mailto:arqam.career@gmail.com" class="cinfo-val" style="color:var(--text);">arqam.career@gmail.com</a></div></div>
+          <div class="cinfo"><div class="cinfo-ico"><i class="fas fa-map-marker-alt"></i></div><div><div class="cinfo-lbl">Location</div><div class="cinfo-val">Lisbon, Portugal</div></div></div>
+          <div class="cinfo"><div class="cinfo-ico"><i class="fab fa-linkedin-in"></i></div><div><div class="cinfo-lbl">LinkedIn</div><a href="https://www.linkedin.com/in/muhammadarqam-845b4614b/" target="_blank" class="cinfo-val" style="color:var(--primary);">linkedin.com/in/muhammadarqam</a></div></div>
+          <div class="cinfo"><div class="cinfo-ico"><i class="fab fa-github"></i></div><div><div class="cinfo-lbl">GitHub</div><a href="https://github.com/arqam-dev" target="_blank" class="cinfo-val" style="color:var(--primary);">github.com/arqam-dev</a></div></div>
+          <div class="cinfo"><div class="cinfo-ico"><i class="fab fa-stack-overflow"></i></div><div><div class="cinfo-lbl">Stack Overflow</div><a href="https://stackoverflow.com/users" target="_blank" class="cinfo-val" style="color:var(--primary);">Stack Overflow Profile</a></div></div>
+          <div class="cinfo"><div class="cinfo-ico"><i class="fas fa-globe"></i></div><div><div class="cinfo-lbl">Learning Platform</div><a href="https://codewitharqam.com" target="_blank" class="cinfo-val" style="color:var(--primary);">codewitharqam.com</a></div></div>
+          <div class="cinfo" style="border-bottom:none;"><div class="cinfo-ico"><i class="fab fa-skype" style="color:#00aff0;"></i></div><div><div class="cinfo-lbl">Skype</div><a href="https://join.skype.com/invite/gwCOX6trJd1v" target="_blank" class="cinfo-val" style="color:var(--primary);">Join on Skype</a></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="unslate_co--footer unslate_co--section">
+  <div class="container">
+    <div class="footer-body">
+      <div class="row align-items-start justify-content-between">
+        <div class="col-md-7 mb-4 mb-md-0">
+          <div class="footer-logo"><a href="#">Arqam<span>.</span></a></div>
+          <p class="footer-tag">Principal Software Engineer &amp; Tech Lead &nbsp;·&nbsp; Lisbon, Portugal &nbsp;·&nbsp; Open to Remote Worldwide</p>
+          <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/muhammadarqam-845b4614b/" target="_blank" class="f-soc"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            <a href="https://github.com/arqam-dev" target="_blank" class="f-soc"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://stackoverflow.com/users" target="_blank" class="f-soc"><i class="fab fa-stack-overflow"></i> Stack Overflow</a>
+            <a href="https://codewitharqam.com" target="_blank" class="f-soc"><i class="fas fa-code"></i> CodeWithArqam</a>
+            <a href="https://www.npmjs.com/~arqam-dev" target="_blank" class="f-soc"><i class="fab fa-npm"></i> NPM</a>
+            <a href="mailto:arqam.career@gmail.com" class="f-soc"><i class="fas fa-envelope"></i> Email</a>
+          </div>
+          <div class="footer-divider"></div>
+          <p class="footer-cr">&copy; <script>document.write(new Date().getFullYear());</script> Muhammad Arqam. All rights reserved.</p>
+        </div>
+        <div class="col-md-3">
+          <p class="footer-links-title">Quick Links</p>
+          <ul class="footer-links">
+            <li><a href="#about-section" class="smoothscroll">About</a></li>
+            <li><a href="#experience-section" class="smoothscroll">Experience</a></li>
+            <li><a href="#projects-section" class="smoothscroll">Projects</a></li>
+            <li><a href="#skills-section" class="smoothscroll">Skills</a></li>
+            <li><a href="#testimonials-section" class="smoothscroll">Reviews</a></li>
+            <li><a href="#oss-section" class="smoothscroll">Open Source</a></li>
+            <li><a href="#contact-section" class="smoothscroll">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<button id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<div id="unslate_co--overlayer"></div>
+<div class="site-loader-wrap"><div class="site-loader"></div></div>
+
+<script src="js/vendor/jquery-3.3.1.min.js"></script>
+<script src="js/vendor/aos.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+
+<script>
+(function () {
+  'use strict';
+
+  window.addEventListener('load', function () {
+    var overlay = document.getElementById('unslate_co--overlayer');
+    var loader  = document.querySelector('.site-loader-wrap');
+    if (overlay) overlay.classList.add('loaded');
+    setTimeout(function () {
+      if (overlay) overlay.style.display = 'none';
+      if (loader)  loader.style.display  = 'none';
+    }, 600);
+  });
+
+  AOS.init({ duration: 680, once: true, offset: 60, easing: 'ease-out-quart' });
+
+  var titles = ['Principal Software Engineer','Tech Lead & Cloud Architect','AWS Serverless Specialist','Node.js & TypeScript Expert','Full-Stack Developer','JavaScript Bootcamp Trainer'];
+  var idx = 0, chr = 0, deleting = false;
+  var el = document.getElementById('typed-out');
+  function typeLoop() {
+    var str = titles[idx];
+    if (deleting) {
+      chr--;
+      el.textContent = str.substring(0, chr);
+      if (chr === 0) { deleting = false; idx = (idx + 1) % titles.length; setTimeout(typeLoop, 380); return; }
+      setTimeout(typeLoop, 38);
+    } else {
+      chr++;
+      el.textContent = str.substring(0, chr);
+      if (chr === str.length) { deleting = true; setTimeout(typeLoop, 2200); return; }
+      setTimeout(typeLoop, 62);
+    }
+  }
+  if (el) setTimeout(typeLoop, 800);
+
+  var nav = document.getElementById('site-nav');
+  window.addEventListener('scroll', function () {
+    if (nav) { if (window.scrollY > 40) nav.classList.add('is-scrolled'); else nav.classList.remove('is-scrolled'); }
+    var st = document.getElementById('scroll-top');
+    if (st) { if (window.scrollY > 400) st.classList.add('show'); else st.classList.remove('show'); }
+  });
+
+  var fills = document.querySelectorAll('.skill-fill');
+  if (fills.length && 'IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.style.width = e.target.getAttribute('data-w') + '%'; obs.unobserve(e.target); } });
+    }, { threshold: 0.25 });
+    fills.forEach(function (f) { obs.observe(f); });
+  }
+
+  var cloneNavs = document.querySelectorAll('.js-clone-nav');
+  var mobileWrap = document.querySelector('.site-mobile-inner');
+  if (cloneNavs.length && mobileWrap) {
+    var wrap = document.createElement('div'); wrap.className = 'nav-wrap';
+    var ul = document.createElement('ul');
+    cloneNavs.forEach(function (n) { n.querySelectorAll('li').forEach(function (li) { ul.appendChild(li.cloneNode(true)); }); });
+    wrap.appendChild(ul); mobileWrap.appendChild(wrap);
+  }
+  document.querySelectorAll('.js-menu-toggle').forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      var mm = document.querySelector('.unslate_co--site-mobile-menu');
+      if (mm) mm.style.right = mm.style.right === '0px' ? '-310px' : '0px';
+    });
+  });
+
+  document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      var href = this.getAttribute('href');
+      if (href && href.length > 1) {
+        var target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          window.scrollTo({ top: target.offsetTop - 80, behavior: 'smooth' });
+          var mm = document.querySelector('.unslate_co--site-mobile-menu');
+          if (mm) mm.style.right = '-310px';
+        }
+      }
+    });
+  });
+
+  var form = document.getElementById('contactForm');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var btn = form.querySelector('button[type=submit]');
+      var spin = form.querySelector('.submitting');
+      var warn = document.getElementById('form-message-warning');
+      var succ = document.getElementById('form-message-success');
+      if (btn) btn.disabled = true;
+      if (spin) spin.textContent = 'Sending...';
+      if (warn) warn.textContent = '';
+      if (succ) succ.style.display = 'none';
+      var data = new FormData(form);
+      fetch('php/send-email.php', { method: 'POST', body: data })
+        .then(function (r) { return r.text(); })
+        .then(function (res) {
+          if (btn) btn.disabled = false;
+          if (spin) spin.textContent = '';
+          if (res.trim() === 'OK') { if (succ) succ.style.display = 'block'; form.reset(); }
+          else { if (warn) warn.textContent = 'Something went wrong. Please email arqam.career@gmail.com directly.'; }
+        })
+        .catch(function () {
+          if (btn) btn.disabled = false;
+          if (spin) spin.textContent = '';
+          if (warn) warn.textContent = 'Network error. Please email arqam.career@gmail.com';
+        });
+    });
+  }
+
+}());
+</script>
+
+</body>
 </html>
